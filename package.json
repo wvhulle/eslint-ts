@@ -1,0 +1,23 @@
+{
+	"author": "Willem Vanhulle <willemvanhulle@gmail.com>",
+	"dependencies": {
+		"@wvhulle/eslint-config-node": "^0.0.1",
+		"@typescript-eslint/eslint-plugin": "6.9.1",
+		"@typescript-eslint/parser": "^6.9.1",
+		"eslint-import-resolver-typescript": "^3.6.1"
+	},
+	"description": "Configuration for ES Lint, a formatter and linter for Node libraries and applications written in TypeScript.",
+	"keywords": [
+		"ES Lint",
+		"formatter",
+		"linter",
+		"Node"
+	],
+	"license": "GPL-3.0-only",
+	"main": "index.js",
+	"module": "commonjs",
+	"name": "@wvhulle/eslint-config-typescript",
+
+	"repository": "https://github.com/wvhulle/eslint-ts",
+	"version": "0.0.1"
+}

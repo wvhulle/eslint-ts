@@ -1,0 +1,16 @@
+image: node:latest
+
+stages:
+  - deploy
+deploy:
+  stage: deploy
+  script:
+  - npm config set -- //git.inbiose.lan/:_authToken=${CI_JOB_TOKEN}
+  - npm config set -- //git.inbiose.lan/api/v4/projects/133/packages/npm/:_authToken=${CI_JOB_TOKEN}
+  - echo "@data:registry=http://git.inbiose.lan/api/v4/projects/133/packages/npm/">>.npmrc
+  - echo "@frontend:registry=http://git.inbiose.lan/api/v4/projects/133/packages/npm/">>.npmrc
+  - echo "@backend:registry=http://git.inbiose.lan/api/v4/projects/133/packages/npm/">>.npmrc
+  - npm install 
+  - npm publish  --non-interactive --verbose
+  only:
+  - main
