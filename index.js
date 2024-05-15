@@ -1,7 +1,7 @@
 /* eslint-env node */
 module.exports = {
     extends: [
-        '@backend/eslint-config-node',
+        '@wvhulle/eslint-config-node',
         'plugin:@typescript-eslint/recommended-type-checked',
         'plugin:@typescript-eslint/stylistic-type-checked',
     ],
