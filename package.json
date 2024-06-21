@@ -14,13 +14,9 @@
 		"Node"
 	],
 	"license": "GPL-3.0-only",
-	"main": "index.mjs",
+	"main": "index.js",
 	"module": "commonjs",
 	"name": "@wvhulle/eslint-config-typescript",
 	"repository": "https://github.com/wvhulle/eslint-ts",
-	"version": "0.0.5",
-	"devDependencies": {
-		"@eslint/eslintrc": "^3.1.0",
-		"@eslint/js": "^9.5.0"
-	}
+	"version": "0.0.4"
 }
